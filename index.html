@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAOS BCAI — Home</title>
+<meta http-equiv="refresh" content="4; url=bcai_benchmarks.html">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1F4E79 0%, #2E75B6 60%, #375623 100%);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  }
+  .card {
+    background: rgba(255,255,255,0.97); border-radius: 20px;
+    padding: 60px 56px; text-align: center; max-width: 600px; width: 90%;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.25);
+  }
+  .logo {
+    font-size: 3.5rem; font-weight: 900; color: #1F4E79;
+    letter-spacing: -2px; line-height: 1;
+  }
+  .logo span { color: #375623; }
+  .sub { font-size: 1.1rem; color: #2E75B6; margin-top: 8px; font-weight: 600; }
+  .tagline { font-size: 14px; color: #606060; margin-top: 4px; font-style: italic; }
+  .divider { border: none; border-top: 2px solid #e0e8f0; margin: 32px 0; }
+  .msg { font-size: 15px; color: #404040; margin-bottom: 8px; }
+  .countdown {
+    font-size: 2.4rem; font-weight: 800; color: #1F4E79;
+    margin: 12px 0;
+  }
+  .redir { font-size: 13px; color: #606060; margin-bottom: 28px; }
+  .btn {
+    display: inline-block; background: linear-gradient(135deg, #1F4E79, #2E75B6);
+    color: #fff; text-decoration: none; padding: 14px 36px;
+    border-radius: 50px; font-size: 15px; font-weight: 700;
+    box-shadow: 0 4px 20px rgba(31,78,121,0.35);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(31,78,121,0.45); }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 28px; }
+  .pill {
+    background: #EBF3FB; border-radius: 20px; padding: 5px 14px;
+    font-size: 12px; color: #1F4E79; font-weight: 600;
+  }
+  .pill.green { background: #D5E8D4; color: #375623; }
+  .pill.gold  { background: #FFF3CD; color: #856404; }
+  .copyright { font-size: 11px; color: #A0AEC0; margin-top: 28px; }
+  .bar-bg {
+    background: #e0e8f0; border-radius: 4px; height: 6px; margin-top: 16px; overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%; background: linear-gradient(90deg, #1F4E79, #375623);
+    border-radius: 4px; animation: fill 4s linear forwards;
+  }
+  @keyframes fill { from { width: 0% } to { width: 100% } }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">AAOS <span>BCAI</span></div>
+  <div class="sub">Byte Code for Artificial Intelligence</div>
+  <div class="tagline">Not a faster Transformer. A new paradigm.</div>
+  <hr class="divider">
+  <div class="msg">Redirecting to Benchmark Dashboard...</div>
+  <div class="countdown" id="cd">4</div>
+  <div class="redir">Auto-redirect in <strong>4 seconds</strong></div>
+  <a href="bcai_benchmarks.html" class="btn">→ Open Benchmark Dashboard Now</a>
+  <div class="bar-bg"><div class="bar-fill"></div></div>
+  <div class="pills">
+    <div class="pill green">0.046ms per keystroke ✓</div>
+    <div class="pill green">2 MB memory ✓</div>
+    <div class="pill green">100% offline ✓</div>
+    <div class="pill gold">Patent Pending</div>
+    <div class="pill">NLTK · 236K words</div>
+    <div class="pill">7 Benchmarks</div>
+    <div class="pill">12 Companies Compared</div>
+  </div>
+  <div class="copyright">
+    © 2026 AAOS — Madhusudhana · All Rights Reserved<br>
+    Benchmark data: Live Python run · June 20, 2026
+  </div>
+</div>
+<script>
+  let n = 4;
+  const el = document.getElementById('cd');
+  const t = setInterval(() => {
+    n--;
+    el.textContent = n;
+    if (n <= 0) {
+      clearInterval(t);
+      window.location.href = 'bcai_benchmarks.html';
+    }
+  }, 1000);
+</script>
+</body>
+</html>
