@@ -11,3 +11,4 @@ Having said that, we are still working to **improve our architecture** based on 
 ## 📂 Published Document
 You can access the benchmark results here:  
 [PrismAI_Benchmarks.pdf](./word_suggestions/public/v1/AAOS_PrismAI_RealTime_Benchmark_Evidence.pdf)
+[PrismAI_Benchmarks.html](./word_suggestions/public/v1/index.html)
